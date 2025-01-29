@@ -1,33 +1,38 @@
 .introducao {
   max-width: 1200px;
   padding: 40px 20px;
-  margin: 0 auto;
+  margin: auto;
+  grid-template-columns: 1fr 1fr;
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 100px;
   align-items: center;
+  gap: 100px;
 }
 
-.introducao h1 {
+.introducao-container h1 {
   font-size: 4.5rem;
   line-height: 1.125;
   margin-bottom: 30px;
-  position: relative;
+  margin: auto;
 }
 
-.introducao h1::before {
+
+.introducao-container h1::before {
   content: "";
   display: block;
   width: 130px;
   height: 100px;
   background: url("../img/detalhe.svg") no-repeat center;
   position: absolute;
-  top: -15px;
-  left: -40px;
   z-index: -1;
+  margin-left: -3rem;
 }
 
-.introducao p {
+.introducao-container img {
+  margin-left: 30rem;
+}
+
+
+.introducao-container p {
   font-size: 1.5rem;
   color: #525252;
 }
@@ -40,7 +45,7 @@
 
 @media (max-width: 800px) {
   .introducao {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     gap: 40px;
   }
   .introducao h1 {

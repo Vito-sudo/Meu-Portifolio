@@ -1,7 +1,8 @@
 body {
   font-family: "Fira Sans", Arial, sans-serif;
-  margin: 0px;
   color: #141414;
+  display: grid;
+  grid-tamplate-columns: 1fr 1fr;
 }
 
 h1,
@@ -18,11 +19,9 @@ ul {
 }
 
 .imagem {
-  max-width: 100%;
-  height: auto;
-  display: block;
   border-radius: 15px;
-  border: 1px #000000 solid;
+  border: 1px solid #000000;
+  box-shadow: 0px 0px 10px 0px #000000;
 }
 
 .subtitulo {

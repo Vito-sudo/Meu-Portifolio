@@ -80,6 +80,7 @@
   border-radius: 4px;
   background: #ffffff;
   padding: 5px 10px;
+  color: #525252;
 }
 
 @media (max-width: 800px) {
